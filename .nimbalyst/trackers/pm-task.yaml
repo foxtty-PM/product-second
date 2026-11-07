@@ -1,0 +1,62 @@
+type: pm-task
+displayName: PM task
+displayNamePlural: PM tasks
+icon: task_alt
+color: '#2563eb'
+modes:
+  inline: false
+  fullDocument: true
+idPrefix: pt
+idFormat: ulid
+sharing: personal
+fields:
+- name: title
+  type: string
+  required: true
+- name: status
+  type: select
+  default: inbox
+  options:
+  - value: inbox
+    label: Inbox
+  - value: ready
+    label: Ready
+  - value: doing
+    label: Doing
+  - value: needs-me
+    label: Needs Owner
+  - value: waiting
+    label: Waiting
+  - value: failed
+    label: Failed
+  - value: done
+    label: Done
+  - value: dropped
+    label: Dropped
+- name: id
+  type: string
+  readOnly: true
+- name: priority
+  type: select
+  default: medium
+  options:
+  - value: low
+    label: Low
+  - value: medium
+    label: Medium
+  - value: high
+    label: High
+  - value: critical
+    label: Critical
+- name: idea_id
+  type: string
+- name: agent
+  type: string
+- name: expected_result
+  type: string
+- name: result_ref
+  type: string
+roles:
+  title: title
+  workflowStatus: status
+  priority: priority

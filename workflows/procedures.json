@@ -1,0 +1,260 @@
+[
+  {
+    "name": "setup",
+    "role": "coordinator",
+    "template": "templates/setup-report.md",
+    "contract": "procedures/setup.md"
+  },
+  {
+    "name": "graph",
+    "role": "coordinator",
+    "template": "templates/graph-view.md",
+    "contract": "procedures/graph.md"
+  },
+  {
+    "name": "sources",
+    "role": "researcher",
+    "template": "templates/source.md",
+    "contract": "procedures/sources.md"
+  },
+  {
+    "name": "capture",
+    "role": "coordinator",
+    "template": "templates/idea.md",
+    "contract": "procedures/capture.md"
+  },
+  {
+    "name": "kickoff",
+    "role": "coordinator",
+    "template": "templates/decision-brief.md",
+    "contract": "procedures/kickoff.md"
+  },
+  {
+    "name": "triage",
+    "role": "coordinator",
+    "template": "templates/task.md",
+    "contract": "procedures/triage.md"
+  },
+  {
+    "name": "daily",
+    "role": "coordinator",
+    "template": "templates/daily.md",
+    "contract": "procedures/daily.md"
+  },
+  {
+    "name": "advance",
+    "role": "coordinator",
+    "template": "templates/gate.md",
+    "contract": "procedures/advance.md"
+  },
+  {
+    "name": "data-pull",
+    "role": "analyst",
+    "template": "templates/sql-result.md",
+    "contract": "procedures/data-pull.md"
+  },
+  {
+    "name": "analytics-spec",
+    "role": "analyst",
+    "template": "templates/analytics-spec.md",
+    "contract": "procedures/analytics-spec.md"
+  },
+  {
+    "name": "doc-scan",
+    "role": "researcher",
+    "template": "templates/knowledge-candidate.md",
+    "contract": "procedures/doc-scan.md"
+  },
+  {
+    "name": "feature-audit",
+    "role": "researcher",
+    "template": "templates/as-is.md",
+    "contract": "procedures/feature-audit.md"
+  },
+  {
+    "name": "decision-matrix",
+    "role": "product-writer",
+    "template": "templates/decision-brief.md",
+    "contract": "procedures/decision-matrix.md"
+  },
+  {
+    "name": "research",
+    "role": "researcher",
+    "template": "templates/research.md",
+    "contract": "procedures/research.md"
+  },
+  {
+    "name": "brd",
+    "role": "product-writer",
+    "template": "templates/spec.md",
+    "contract": "procedures/brd.md"
+  },
+  {
+    "name": "new-template",
+    "role": "product-writer",
+    "template": "templates/template.md",
+    "contract": "procedures/new-template.md"
+  },
+  {
+    "name": "ux",
+    "role": "uiux",
+    "template": "templates/ux.md",
+    "contract": "procedures/ux.md"
+  },
+  {
+    "name": "api-spec",
+    "role": "api-writer",
+    "template": "templates/api.md",
+    "contract": "procedures/api-spec.md"
+  },
+  {
+    "name": "copy",
+    "role": "product-writer",
+    "template": "templates/copy.md",
+    "contract": "procedures/copy.md"
+  },
+  {
+    "name": "support-docs",
+    "role": "product-writer",
+    "template": "templates/support.md",
+    "contract": "procedures/support-docs.md"
+  },
+  {
+    "name": "options",
+    "role": "product-writer",
+    "template": "templates/decision-brief.md",
+    "contract": "procedures/options.md"
+  },
+  {
+    "name": "iterations",
+    "role": "product-writer",
+    "template": "templates/iterations.md",
+    "contract": "procedures/iterations.md"
+  },
+  {
+    "name": "scope",
+    "role": "product-writer",
+    "template": "templates/spec.md",
+    "contract": "procedures/scope.md"
+  },
+  {
+    "name": "story-map",
+    "role": "product-writer",
+    "template": "templates/iterations.md",
+    "contract": "procedures/story-map.md"
+  },
+  {
+    "name": "business-case",
+    "role": "product-writer",
+    "template": "templates/business-case.md",
+    "contract": "procedures/business-case.md"
+  },
+  {
+    "name": "team-brief",
+    "role": "product-writer",
+    "template": "templates/team-brief.md",
+    "contract": "procedures/team-brief.md"
+  },
+  {
+    "name": "access-request",
+    "role": "coordinator",
+    "template": "templates/access-request.md",
+    "contract": "procedures/access-request.md"
+  },
+  {
+    "name": "owner-action",
+    "role": "coordinator",
+    "template": "templates/task.md",
+    "contract": "procedures/owner-action.md"
+  },
+  {
+    "name": "team-pack",
+    "role": "product-writer",
+    "template": "templates/dev-context.md",
+    "contract": "procedures/team-pack.md"
+  },
+  {
+    "name": "inbox-sweep",
+    "role": "coordinator",
+    "template": "templates/inbox-digest.md",
+    "contract": "procedures/inbox-sweep.md"
+  },
+  {
+    "name": "analytics-request",
+    "role": "analyst",
+    "template": "templates/analytics-spec.md",
+    "contract": "procedures/analytics-request.md"
+  },
+  {
+    "name": "release-check",
+    "role": "coordinator",
+    "template": "templates/release-readiness.md",
+    "contract": "procedures/release-check.md"
+  },
+  {
+    "name": "critique",
+    "role": "reviewer",
+    "template": "templates/review.md",
+    "contract": "procedures/critique.md"
+  },
+  {
+    "name": "tech-review",
+    "role": "technical-reviewer",
+    "template": "templates/review.md",
+    "contract": "procedures/tech-review.md"
+  },
+  {
+    "name": "decision",
+    "role": "coordinator",
+    "template": "templates/decision.md",
+    "contract": "procedures/decision.md"
+  },
+  {
+    "name": "handoff",
+    "role": "coordinator",
+    "template": "templates/dev-context.md",
+    "contract": "procedures/handoff.md"
+  },
+  {
+    "name": "validate",
+    "role": "analyst",
+    "template": "templates/validation.md",
+    "contract": "procedures/validate.md"
+  },
+  {
+    "name": "close",
+    "role": "keeper",
+    "template": "templates/knowledge-candidate.md",
+    "contract": "procedures/close.md"
+  },
+  {
+    "name": "weekly",
+    "role": "keeper",
+    "template": "templates/weekly.md",
+    "contract": "procedures/weekly.md"
+  },
+  {
+    "name": "eval",
+    "role": "reviewer",
+    "template": "templates/eval-run.md",
+    "contract": "procedures/eval.md"
+  },
+  {
+    "name": "examples",
+    "role": "product-writer",
+    "template": "templates/example.md",
+    "contract": "procedures/examples.md"
+  },
+  {
+    "name": "eval-add",
+    "role": "keeper",
+    "template": "templates/golden-case.md",
+    "contract": "procedures/eval-add.md"
+  },
+  {
+    "name": "defer",
+    "role": "coordinator",
+    "template": "templates/backlog.md",
+    "contract": "procedures/defer.md"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "user_facing": [
+    "ux",
+    "accessibility"
+  ],
+  "api_change": [
+    "api",
+    "security"
+  ],
+  "personal_data": [
+    "privacy"
+  ],
+  "production": [
+    "rollout"
+  ],
+  "migration": [
+    "migration"
+  ],
+  "analytics": [
+    "data"
+  ],
+  "regulatory": [
+    "legal"
+  ],
+  "network_constraints": [
+    "degraded-mode"
+  ],
+  "high_risk": [
+    "independent_review",
+    "qualified_expert_where_applicable"
+  ]
+}

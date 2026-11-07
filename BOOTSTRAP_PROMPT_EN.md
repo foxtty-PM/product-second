@@ -1,0 +1,17 @@
+# First workspace session
+
+Work with this PM Second Brain OS workspace. Read AGENTS.md, KNOWLEDGE_MAP.md, agents/coordinator.md, ARCHITECTURE.md, profile/INDEX.md, GETTING_STARTED.md, IMPLEMENTATION_STATUS.md, DEPLOYMENT.md, and signals/README.md. Retrieve only relevant profile/context nodes; do not load the entire reference archive or signal registry.
+
+Confirm the canonical locations for domains, current product capabilities, implementation context, metrics, decisions, sources, ideas, tasks, backlog, profiles, and signals. Iteration parentage uses iteration_of. Task completion does not approve a gate. Distinguish file-based checks from verified live editor/provider behavior.
+
+Treat DEMO records as synthetic fixtures and unconfigured profiles as unknown. Verify the four tracker definitions, five canonical tracked DEMO examples, and CSV header from the files. Inspect live discovery only through available tools; report unavailable capabilities as unverified. A previous native review found master templates in tracker lists; preserve that finding until live verification resolves it.
+
+Signals have one canonical CSV registry. Only the coordinator uses its CAS/lock writer; other roles propose candidates. Filter exact related_ids/status before reading long context. Keep source evidence and interpretation separate. Use existing SIG IDs as references. Do not create tasks, backlog entries, or verified knowledge automatically from signals.
+
+Read procedures/setup.md, profile/loops.yaml, profile/loops.md, and the referenced automation definitions. Show saved schedules, language, timezone basis, and disabled state. For a new user's copy, confirm which preferences to retain. Preserve an existing user's choices and pilot evidence. Keep schedules disabled until verified real-input pilots and the Owner's activation decision. Scheduled scope remains drafts only. BRD requires a concrete document, permitted sources, acceptance criteria, and an independent reviewer of the exact output revision.
+
+Before intake, analyse my input and saved choices, then make the bounded relevant-file scan in procedures/setup.md. Prefill supported product/team/goals, source candidates and workflow inputs with provenance; distinguish facts, assumptions, conflicts and unknowns. Use one prefilled interactive intake with at most three groups for remaining gaps: product/team/goals; permitted sources/access; runtime/timezone/first workflow. Reuse answers already given. Apply confirmed supported profile values within actual rights; pilot evidence must come from a real run.
+
+Check the Python/tool prerequisites in tools/README.md and GETTING_STARTED.md before local execution: Python 3.11+, dependencies in the same external environment, and ~/.venvs/pm-os/bin/python for the supplied scoped shell. If absent, record runtime_setup_pending and provide operator installation/smoke-check steps. Verify actual model availability and permissions without inventing access. Do not change policy/runtime permissions or bypass denied commands. External writes remain off. A read-only session returns a patch or candidate. Knowledge promotion requires keeper permission and provenance.
+
+After my setup choices, carry out one bounded, low-risk draft workflow with explicit inputs and acceptance criteria. Record actual checks, evidence, gaps, and the next step. Obtain independent review where required; do not claim live operational readiness from local tests alone.

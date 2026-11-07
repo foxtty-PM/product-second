@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/.venvs/pm-os/bin/python tools/signals.py *)",
+      "Bash(~/.venvs/pm-os/bin/python tools/search.py *)",
+      "Bash(~/.venvs/pm-os/bin/python tools/backlog.py *)",
+      "Bash(~/.venvs/pm-os/bin/python tools/build_indices.py)",
+      "Bash(~/.venvs/pm-os/bin/python tools/check_package.py)",
+      "Bash(~/.venvs/pm-os/bin/python -m unittest discover -s tests)",
+      "Bash(~/.venvs/pm-os/bin/python -m unittest discover -s tests -v)",
+      "Bash(shasum -a 256 *)"
+    ],
+    "deny": [
+      "mcp__*",
+      "Read(.env*)",
+      "Read(**/.env*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Edit(signals/signals.csv)",
+      "Edit(.claude/**)",
+      "Edit(.codex/**)",
+      "Edit(policy/**)",
+      "Edit(tools/**)",
+      "Edit(**/*.py)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"$CLAUDE_PROJECT_DIR/tools/shell_guard.py\"",
+            "timeout": 10,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}

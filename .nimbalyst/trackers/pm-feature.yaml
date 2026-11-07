@@ -1,0 +1,48 @@
+type: pm-feature
+displayName: PM feature
+displayNamePlural: PM features
+icon: task_alt
+color: '#2563eb'
+modes:
+  inline: false
+  fullDocument: true
+idPrefix: pf
+idFormat: ulid
+sharing: personal
+fields:
+- name: title
+  type: string
+  required: true
+- name: status
+  type: select
+  default: draft
+  options:
+  - value: draft
+    label: draft
+  - value: current
+    label: current
+  - value: deprecated
+    label: deprecated
+  - value: retired
+    label: retired
+- name: id
+  type: string
+  readOnly: true
+- name: priority
+  type: select
+  default: medium
+  options:
+  - value: low
+    label: low
+  - value: medium
+    label: medium
+  - value: high
+    label: high
+  - value: critical
+    label: critical
+- name: domain_id
+  type: string
+roles:
+  title: title
+  workflowStatus: status
+  priority: priority

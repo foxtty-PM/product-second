@@ -1,0 +1,75 @@
+{
+  "S": [
+    "new",
+    "bdr",
+    "dev",
+    "knowledge"
+  ],
+  "S_metric": [
+    "new",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "M": [
+    "new",
+    "research",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "L_parent": [
+    "new",
+    "research",
+    "bdr",
+    "delivering",
+    "knowledge"
+  ],
+  "iteration": [
+    "planned",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "XL": [
+    "new",
+    "research",
+    "knowledge"
+  ],
+  "incident": [
+    "new",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "regulatory": [
+    "new",
+    "research",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "technical_enabler": [
+    "new",
+    "research",
+    "bdr",
+    "dev",
+    "validating",
+    "knowledge"
+  ],
+  "discovery": [
+    "new",
+    "research",
+    "knowledge"
+  ],
+  "operational": [
+    "new",
+    "bdr",
+    "knowledge"
+  ]
+}

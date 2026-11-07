@@ -1,0 +1,4 @@
+# Fresh release / reviewed data migration
+New folder with 4.2 replaces all prior ZIP/overlay/signals documents. User has not installed 4.1, so no migration is required before first open.
+If actual old data exists: backup/restore drill→read-only inventory→canonical ID/path mapping→reviewed copy→schema/link checks→sample review. Do not overwrite originals. Nested trackerStatus fields normalize to top-level; idea status only, not duplicate stage. Flat child idea via iteration_of retained.
+Keep existing IDs/provenance, don't auto-verify claims or retro-sign approvals. Current feature AS-IS not planned spec. Import meaningful old feedback into signals only after source ACL/minimization/dedup review, not blindly every message. Then regenerate indices/adapters/manifest. No destructive apply script included.

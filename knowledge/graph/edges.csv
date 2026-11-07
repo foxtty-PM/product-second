@@ -1,0 +1,17 @@
+from,rel,to
+DEC-DEMO-0001,decided_in,I-DEMO-0001
+D-DEMO-0001,sourced_from,SRC-DEMO-0001
+M-DEMO-0001,sourced_from,SRC-DEMO-0001
+F-DEMO-0001,belongs_to_domain,D-DEMO-0001
+F-DEMO-0001,shown_in,IF-DEMO-0001
+F-DEMO-0001,depends_on,SYS-DEMO-0001
+F-DEMO-0001,integrates_with,INT-DEMO-0001
+F-DEMO-0001,measured_by,M-DEMO-0001
+INT-DEMO-0001,depends_on,SYS-DEMO-0001
+IF-DEMO-0001,sourced_from,SRC-DEMO-0001
+SYS-DEMO-0001,sourced_from,SRC-DEMO-0001
+I-DEMO-0001.1,iteration_of,I-DEMO-0001
+I-DEMO-0001.1,affects,F-DEMO-0001
+I-DEMO-0001,affects,F-DEMO-0001
+T-DEMO-0001,implements,I-DEMO-0001.1
+BL-DEMO-0001,depends_on,I-DEMO-0001.1

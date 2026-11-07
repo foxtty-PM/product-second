@@ -1,0 +1,2 @@
+# Keep text checkouts consistent with file hashes and UTF-8 workspace content.
+* text=auto eol=lf

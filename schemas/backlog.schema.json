@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "entity_type",
+    "title",
+    "revision",
+    "status",
+    "demo",
+    "aliases",
+    "summary",
+    "sources",
+    "links",
+    "signal_refs",
+    "source_id",
+    "reason",
+    "revisit",
+    "trackerStatus",
+    "priority"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "4.2.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "entity_type": {
+      "const": "backlog"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "deferred",
+        "due",
+        "returned",
+        "closed"
+      ]
+    },
+    "demo": {
+      "type": "boolean"
+    },
+    "aliases": {
+      "type": "array"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rel",
+          "to"
+        ],
+        "properties": {
+          "rel": {
+            "enum": [
+              "belongs_to_domain",
+              "affects",
+              "iteration_of",
+              "spawned_from",
+              "implements",
+              "depends_on",
+              "shown_in",
+              "integrates_with",
+              "measured_by",
+              "decided_in",
+              "sourced_from",
+              "replaces",
+              "conflicts_with",
+              "member_of"
+            ]
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "signal_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^SIG-[0-9]{6}$"
+      }
+    },
+    "priority": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revisit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "defer_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "changed_at": {
+      "type": "string"
+    },
+    "changed_by": {
+      "type": "string"
+    },
+    "change_note": {
+      "type": "string"
+    },
+    "last_op": {
+      "type": "object"
+    },
+    "trackerStatus": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "const": "pm-backlog"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "not": {
+    "required": [
+      "stage"
+    ]
+  },
+  "additionalProperties": true
+}

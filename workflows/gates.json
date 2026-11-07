@@ -1,0 +1,118 @@
+{
+  "labels": {
+    "stage": {
+      "new": "New idea",
+      "research": "Research",
+      "bdr": "Requirements preparation",
+      "planned": "Planned",
+      "delivering": "Incremental delivery",
+      "dev": "Development",
+      "validating": "Outcome validation",
+      "knowledge": "Summary and knowledge"
+    },
+    "gate": {
+      "G1a": "Current process",
+      "G1": "Value, metrics, and investment case",
+      "G2": "Implementation option",
+      "G3": "Iteration plan",
+      "G4": "Iteration scope",
+      "G5": "Team handoff",
+      "G6": "Release readiness",
+      "G7": "Outcome and next steps",
+      "GX1": "Initial opportunity research",
+      "GX2": "Opportunity investment decision",
+      "GX3": "Opportunity decomposition into initiatives and features"
+    },
+    "item_type": {
+      "initiative": "Initiative",
+      "feature": "Feature",
+      "iteration": "Iteration",
+      "improvement": "Improvement",
+      "bug": "Bug"
+    },
+    "priority": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "work_status": {
+      "active": "Active",
+      "paused": "Deferred",
+      "blocked": "Blocked",
+      "closed": "Closed"
+    },
+    "outcome": {
+      "validated": "Value validated",
+      "refuted": "Value refuted",
+      "inconclusive": "Insufficient evidence",
+      "killed": "Stopped",
+      "go": "Investment approved",
+      "completed": "Completed without value evaluation"
+    },
+    "task_status": {
+      "inbox": "Inbox",
+      "ready": "Ready",
+      "doing": "Doing",
+      "needs-me": "Needs Owner",
+      "waiting": "Waiting",
+      "failed": "Failed",
+      "done": "Done",
+      "dropped": "Dropped"
+    }
+  },
+  "routes": {
+    "S": {
+      "bdr": [["G5"]],
+      "dev": [["G6"]]
+    },
+    "S_metric": {
+      "bdr": [["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "M": {
+      "research": [["G1a"], ["G1"]],
+      "bdr": [["G2", "G4"], ["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "L_parent": {
+      "research": [["G1a"], ["G1"]],
+      "bdr": [["G2"], ["G3"]]
+    },
+    "iteration": {
+      "bdr": [["G4"], ["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "XL": {
+      "research": [["GX1"], ["GX2"], ["GX3"]]
+    },
+    "incident": {
+      "bdr": [["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "regulatory": {
+      "research": [["G1a"], ["G1"]],
+      "bdr": [["G2", "G4"], ["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "technical_enabler": {
+      "research": [["G1a"], ["G1"]],
+      "bdr": [["G2", "G4"], ["G5"]],
+      "dev": [["G6"]],
+      "validating": [["G7"]]
+    },
+    "discovery": {
+      "research": [["GX1"], ["GX2"], ["GX3"]]
+    },
+    "operational": {}
+  },
+  "g7_choices": {
+    "iteration": ["next_iteration", "adjust_plan", "stop", "close"],
+    "single": ["close", "new_idea"]
+  }
+}

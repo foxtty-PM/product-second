@@ -1,0 +1,32 @@
+# Onboarding preferences, not a scheduler or authorization broker.
+# Times and enabled state live only in the referenced automation files.
+schema_version: "4.2.0"
+timezone: Europe/Kyiv
+timezone_basis: session_environment
+execution_mode: draft_only
+activation: manual_pilot_first
+loops:
+  inbox:
+    selected: true
+    automation_files:
+      - nimbalyst-local/automations/inbox-morning.md
+      - nimbalyst-local/automations/inbox-afternoon.md
+    source_allowlist: []
+    pilot_report: null
+    owner_activation_ref: null
+  brd:
+    selected: true
+    trigger: manual_per_document
+    procedure: procedures/brd.md
+    max_revision_rounds: 2
+    document_path: null
+    source_refs: []
+    acceptance_criteria: []
+    reviewer_ref: null
+    pilot_report: null
+  weekly:
+    selected: true
+    automation_files:
+      - nimbalyst-local/automations/weekly-focus-backlog.md
+    pilot_report: null
+    owner_activation_ref: null

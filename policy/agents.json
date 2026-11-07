@@ -1,0 +1,66 @@
+{
+  "coordinator": {
+    "description": "Coordination, task contracts, and gates; sole signal CSV writer.",
+    "model_profile": "standard",
+    "contract": "agents/coordinator.md",
+    "activation": "default",
+    "read_only": false,
+    "shell": "scoped"
+  },
+  "researcher": {
+    "description": "Domains, business AS-IS, primary sources, and relevant signals.",
+    "model_profile": "standard",
+    "contract": "agents/researcher.md",
+    "activation": "default",
+    "read_only": false
+  },
+  "analyst": {
+    "description": "Metrics, event semantics, SQL/analytics/validation; signals as qualitative evidence candidates.",
+    "model_profile": "standard",
+    "contract": "agents/analyst.md",
+    "activation": "default",
+    "read_only": false
+  },
+  "product-writer": {
+    "description": "Synthesis, options, scope, specifications, copy, support, and derived packs.",
+    "model_profile": "standard",
+    "contract": "agents/product-writer.md",
+    "activation": "default",
+    "read_only": false
+  },
+  "reviewer": {
+    "description": "Independent subject review of the exact revision and source grounding.",
+    "model_profile": "review",
+    "contract": "agents/reviewer.md",
+    "activation": "default",
+    "read_only": true
+  },
+  "technical-reviewer": {
+    "description": "Independent code, contract, architecture, and failure review.",
+    "model_profile": "technical-review",
+    "contract": "agents/technical-reviewer.md",
+    "activation": "default",
+    "read_only": true
+  },
+  "keeper": {
+    "description": "Permissioned knowledge/provenance/AS-IS update/close/weekly.",
+    "model_profile": "standard",
+    "contract": "agents/keeper.md",
+    "activation": "default",
+    "read_only": false
+  },
+  "uiux": {
+    "description": "Optional flows, states, prototypes, and accessibility.",
+    "model_profile": "standard",
+    "contract": "agents/uiux.md",
+    "activation": "optional",
+    "read_only": false
+  },
+  "api-writer": {
+    "description": "Optional OpenAPI, contracts, and integration examples.",
+    "model_profile": "standard",
+    "contract": "agents/api-writer.md",
+    "activation": "optional",
+    "read_only": false
+  }
+}

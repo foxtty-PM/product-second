@@ -1,0 +1,62 @@
+{
+  "DEC-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/decisions/DEC-DEMO-0001.md",
+    "entity_type": "decision"
+  },
+  "D-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/domains/citizen-requests/D-DEMO-0001.md",
+    "entity_type": "domain"
+  },
+  "M-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/metrics/M-DEMO-0001.md",
+    "entity_type": "metric"
+  },
+  "F-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/product/features/F-DEMO-0001.md",
+    "entity_type": "feature"
+  },
+  "INT-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/product/integrations/INT-DEMO-0001.md",
+    "entity_type": "integration"
+  },
+  "IF-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/product/interfaces/IF-DEMO-0001.md",
+    "entity_type": "interface"
+  },
+  "SYS-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/product/systems/SYS-DEMO-0001.md",
+    "entity_type": "system"
+  },
+  "SRC-DEMO-0001": {
+    "kind": "markdown",
+    "path": "knowledge/sources/SRC-DEMO-0001.md",
+    "entity_type": "source"
+  },
+  "I-DEMO-0001.1": {
+    "kind": "markdown",
+    "path": "ideas/I-DEMO-0001.1.md",
+    "entity_type": "idea"
+  },
+  "I-DEMO-0001": {
+    "kind": "markdown",
+    "path": "ideas/I-DEMO-0001.md",
+    "entity_type": "idea"
+  },
+  "T-DEMO-0001": {
+    "kind": "markdown",
+    "path": "tasks/T-DEMO-0001.md",
+    "entity_type": "task"
+  },
+  "BL-DEMO-0001": {
+    "kind": "markdown",
+    "path": "backlog/BL-DEMO-0001.md",
+    "entity_type": "backlog"
+  }
+}

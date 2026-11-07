@@ -1,0 +1,16 @@
+context,canonical_location,candidate_authors,canonical_writer
+Domains,knowledge/domains/,researcher,keeper
+Features,knowledge/product/features/,writer/researcher,keeper
+Interfaces,knowledge/product/interfaces/,uiux/technical-reviewer,keeper
+Systems,knowledge/product/systems/,analyst/technical-reviewer,keeper
+Integrations,knowledge/product/integrations/,api-writer/technical-reviewer,keeper
+Metrics,knowledge/metrics/,analyst,keeper
+Decisions,knowledge/decisions/,coordinator,keeper
+Sources,knowledge/sources/,researcher/analyst,keeper
+Ideas/iterations,ideas/,coordinator/writer,coordinator/writer
+Tasks,tasks/,coordinator/executors,coordinator/executors
+Backlog,backlog/,coordinator/keeper,coordinator/keeper
+Signals,signals/signals.csv,all relevant readers,coordinator
+Profiles,profile/,all via knowledge map,Owner setup
+Agent context,AGENTS.md; KNOWLEDGE_MAP.md; agents/,all,operator
+Tracker,.nimbalyst/trackers/,"4 types, signals not a tracker",operator

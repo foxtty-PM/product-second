@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "artifact_type",
+    "revision",
+    "status",
+    "input_manifest",
+    "signal_refs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "4.2.0"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "type": "string"
+    },
+    "input_manifest": {
+      "type": "array"
+    },
+    "signal_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^SIG-[0-9]{6}$"
+      }
+    }
+  },
+  "additionalProperties": true
+}

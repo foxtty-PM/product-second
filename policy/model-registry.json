@@ -1,0 +1,60 @@
+{
+  "status": "unconfigured",
+  "profiles": {
+    "extract": {
+      "provider": null,
+      "model_id": null,
+      "runtime": null,
+      "reasoning": null,
+      "verified_at": null,
+      "eval_ref": null,
+      "price_ref": null,
+      "data_policy": null,
+      "fallback": "explicit_inherit_or_stop"
+    },
+    "standard": {
+      "provider": null,
+      "model_id": null,
+      "runtime": null,
+      "reasoning": null,
+      "verified_at": null,
+      "eval_ref": null,
+      "price_ref": null,
+      "data_policy": null,
+      "fallback": "explicit_inherit_or_stop"
+    },
+    "synthesis": {
+      "provider": null,
+      "model_id": null,
+      "runtime": null,
+      "reasoning": null,
+      "verified_at": null,
+      "eval_ref": null,
+      "price_ref": null,
+      "data_policy": null,
+      "fallback": "explicit_inherit_or_stop"
+    },
+    "review": {
+      "provider": null,
+      "model_id": null,
+      "runtime": null,
+      "reasoning": null,
+      "verified_at": null,
+      "eval_ref": null,
+      "price_ref": null,
+      "data_policy": null,
+      "fallback": "explicit_inherit_or_stop"
+    },
+    "technical-review": {
+      "provider": null,
+      "model_id": null,
+      "runtime": null,
+      "reasoning": null,
+      "verified_at": null,
+      "eval_ref": null,
+      "price_ref": null,
+      "data_policy": null,
+      "fallback": "explicit_inherit_or_stop"
+    }
+  }
+}

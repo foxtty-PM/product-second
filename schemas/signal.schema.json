@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "signal_id",
+    "observed_at",
+    "captured_at",
+    "type",
+    "summary",
+    "context",
+    "interpretation",
+    "source",
+    "source_ref",
+    "related_ids",
+    "status",
+    "action_ref"
+  ],
+  "properties": {
+    "signal_id": {
+      "type": "string",
+      "pattern": "^SIG-[0-9]{6}$"
+    },
+    "observed_at": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "request",
+        "complaint",
+        "error",
+        "observation",
+        "suggestion"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "related_ids": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "new",
+        "reviewed",
+        "actioned",
+        "dismissed"
+      ]
+    },
+    "action_ref": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

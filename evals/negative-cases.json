@@ -1,0 +1,122 @@
+[
+  {
+    "id": "N-001",
+    "case": "injection",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-002",
+    "case": "contradictory_sources",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-003",
+    "case": "missing_baseline",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-004",
+    "case": "plausible_wrong_sql",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-005",
+    "case": "stale_approval",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-006",
+    "case": "partial_handoff",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-007",
+    "case": "duplicate_send",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-008",
+    "case": "concurrent_write",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-009",
+    "case": "missing_reviewer",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-010",
+    "case": "interrupted_session",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-011",
+    "case": "lost_cursor",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-012",
+    "case": "delayed_message",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-013",
+    "case": "pii_false_negative",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-014",
+    "case": "unsupported_claim",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-015",
+    "case": "provider_unavailable",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-016",
+    "case": "symlink_escape",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-017",
+    "case": "approval_replay",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-018",
+    "case": "parent_outcome",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-019",
+    "case": "privacy_deletion",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  },
+  {
+    "id": "N-020",
+    "case": "unknown_send_result",
+    "status": "defined_not_live_executed",
+    "expected": "Safe stop/explicit evidence/qualified review or reconciliation as applicable; never fabricate or bypass"
+  }
+]

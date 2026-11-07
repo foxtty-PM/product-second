@@ -1,0 +1,11 @@
+{
+  "version": "4.2.0",
+  "external_writes_enabled": false,
+  "signal_writer": "coordinator",
+  "knowledge_writer": "keeper",
+  "tracker_canon": "markdown",
+  "signals_canon": "signals/signals.csv",
+  "sql_tracker": false,
+  "live_verified": false,
+  "mode": "single_writer_local_reviewed_pilot"
+}

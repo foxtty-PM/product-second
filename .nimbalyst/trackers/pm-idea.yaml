@@ -1,0 +1,92 @@
+type: pm-idea
+displayName: PM idea
+displayNamePlural: PM ideas
+icon: task_alt
+color: '#2563eb'
+modes:
+  inline: false
+  fullDocument: true
+idPrefix: pi
+idFormat: ulid
+sharing: personal
+fields:
+- name: title
+  type: string
+  required: true
+- name: status
+  type: select
+  default: new
+  options:
+  - value: new
+    label: New idea
+  - value: research
+    label: Research
+  - value: bdr
+    label: Requirements preparation
+  - value: planned
+    label: Planned
+  - value: delivering
+    label: Incremental delivery
+  - value: dev
+    label: Development
+  - value: validating
+    label: Outcome validation
+  - value: knowledge
+    label: Summary and knowledge
+- name: id
+  type: string
+  readOnly: true
+- name: priority
+  type: select
+  default: medium
+  options:
+  - value: low
+    label: Low
+  - value: medium
+    label: Medium
+  - value: high
+    label: High
+  - value: critical
+    label: Critical
+- name: work_status
+  type: select
+  default: active
+  options:
+  - value: active
+    label: Active
+  - value: paused
+    label: Deferred
+  - value: blocked
+    label: Blocked
+  - value: closed
+    label: Closed
+- name: scale
+  type: select
+  default: M
+  options:
+  - value: S
+    label: S
+  - value: M
+    label: M
+  - value: L
+    label: L
+  - value: XL
+    label: XL
+- name: item_type
+  type: select
+  default: feature
+  options:
+  - value: initiative
+    label: Initiative
+  - value: feature
+    label: Feature
+  - value: iteration
+    label: Iteration
+  - value: improvement
+    label: Improvement
+  - value: bug
+    label: Bug
+roles:
+  title: title
+  workflowStatus: status
+  priority: priority

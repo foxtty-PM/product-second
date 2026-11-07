@@ -1,0 +1,50 @@
+type: pm-backlog
+displayName: PM backlog
+displayNamePlural: PM backlog
+icon: task_alt
+color: '#2563eb'
+modes:
+  inline: false
+  fullDocument: true
+idPrefix: pb
+idFormat: ulid
+sharing: personal
+fields:
+- name: title
+  type: string
+  required: true
+- name: status
+  type: select
+  default: deferred
+  options:
+  - value: deferred
+    label: Deferred
+  - value: due
+    label: Revisit due
+  - value: returned
+    label: Returned
+  - value: closed
+    label: Closed
+- name: id
+  type: string
+  readOnly: true
+- name: priority
+  type: select
+  default: medium
+  options:
+  - value: low
+    label: Low
+  - value: medium
+    label: Medium
+  - value: high
+    label: High
+  - value: critical
+    label: Critical
+- name: source_id
+  type: string
+- name: revisit
+  type: string
+roles:
+  title: title
+  workflowStatus: status
+  priority: priority

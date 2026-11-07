@@ -1,0 +1,28 @@
+{
+  "version": "4.2.0",
+  "canonical": "signals/signals.csv",
+  "contract": "signals/README.md",
+  "writer": "coordinator",
+  "new_agents": 0,
+  "new_visible_skills": 0,
+  "new_native_tracker_types": 0,
+  "integration_points": [
+    "AGENTS.md",
+    "ARCHITECTURE.md",
+    "KNOWLEDGE_MAP.md",
+    "SPEC.md",
+    "agents/*",
+    "skills/*",
+    "procedures/*",
+    "templates/* signal_refs",
+    "schemas/signal.schema.json",
+    "tools/signals.py",
+    "tools/search.py",
+    "tools/build_indices.py",
+    "tools/check_package.py",
+    "tests/test_signals.py",
+    "tests/test_integration.py"
+  ],
+  "initial_rows": 0,
+  "main_package_consolidated": true
+}

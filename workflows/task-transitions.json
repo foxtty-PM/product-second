@@ -1,0 +1,33 @@
+{
+  "inbox": [
+    "ready",
+    "dropped"
+  ],
+  "ready": [
+    "inbox",
+    "doing",
+    "dropped"
+  ],
+  "doing": [
+    "needs-me",
+    "waiting",
+    "failed",
+    "done",
+    "dropped"
+  ],
+  "needs-me": [
+    "doing",
+    "dropped"
+  ],
+  "waiting": [
+    "doing",
+    "failed",
+    "dropped"
+  ],
+  "failed": [
+    "ready",
+    "dropped"
+  ],
+  "done": [],
+  "dropped": []
+}

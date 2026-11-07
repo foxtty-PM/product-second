@@ -1,0 +1,645 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "entity_type",
+    "title",
+    "revision",
+    "status",
+    "demo",
+    "aliases",
+    "summary",
+    "sources",
+    "links",
+    "signal_refs",
+    "scale",
+    "risk_profile",
+    "work_type",
+    "work_status",
+    "outcome",
+    "feature_ids",
+    "route",
+    "trackerStatus",
+    "priority",
+    "item_type"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "4.2.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "entity_type": {
+      "const": "idea"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "new",
+        "research",
+        "bdr",
+        "planned",
+        "delivering",
+        "dev",
+        "validating",
+        "knowledge"
+      ]
+    },
+    "demo": {
+      "type": "boolean"
+    },
+    "aliases": {
+      "type": "array"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rel",
+          "to"
+        ],
+        "properties": {
+          "rel": {
+            "enum": [
+              "belongs_to_domain",
+              "affects",
+              "iteration_of",
+              "spawned_from",
+              "implements",
+              "depends_on",
+              "shown_in",
+              "integrates_with",
+              "measured_by",
+              "decided_in",
+              "sourced_from",
+              "replaces",
+              "conflicts_with",
+              "member_of"
+            ]
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "signal_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^SIG-[0-9]{6}$"
+      }
+    },
+    "priority": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "scale": {
+      "enum": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "risk_profile": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "work_type": {
+      "enum": [
+        "product_feature",
+        "incident",
+        "regulatory",
+        "technical_enabler",
+        "discovery",
+        "operational"
+      ]
+    },
+    "work_status": {
+      "enum": [
+        "active",
+        "paused",
+        "blocked",
+        "closed"
+      ]
+    },
+    "outcome": {
+      "enum": [
+        null,
+        "validated",
+        "refuted",
+        "inconclusive",
+        "killed",
+        "go",
+        "completed"
+      ]
+    },
+    "feature_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "route": {
+      "enum": [
+        "S",
+        "S_metric",
+        "M",
+        "L_parent",
+        "iteration",
+        "XL",
+        "incident",
+        "regulatory",
+        "technical_enabler",
+        "discovery",
+        "operational"
+      ]
+    },
+    "item_type": {
+      "enum": [
+        "initiative",
+        "feature",
+        "iteration",
+        "improvement",
+        "bug"
+      ]
+    },
+    "queue_rank": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "priority_reason": {
+      "type": "string"
+    },
+    "remainder": {
+      "type": "string"
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "artifact_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "value": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "expected_value",
+        "metric",
+        "target",
+        "data_source",
+        "deadline",
+        "evaluation_rule"
+      ],
+      "properties": {
+        "expected_value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metric": {
+          "type": "string",
+          "minLength": 1
+        },
+        "baseline": {
+          "type": "string",
+          "minLength": 1
+        },
+        "baseline_missing_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deadline": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evaluation_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mini": {
+          "type": "boolean"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "baseline"
+          ]
+        },
+        {
+          "required": [
+            "baseline_missing_reason"
+          ]
+        }
+      ]
+    },
+    "gate_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gate",
+          "decision",
+          "at",
+          "recorded_by"
+        ],
+        "properties": {
+          "gate": {
+            "enum": [
+              "G1a",
+              "G1",
+              "G2",
+              "G3",
+              "G4",
+              "G5",
+              "G6",
+              "G7",
+              "GX1",
+              "GX2",
+              "GX3"
+            ]
+          },
+          "decision": {
+            "enum": [
+              "approved",
+              "changes_requested",
+              "rejected",
+              "inherited",
+              "not_applicable"
+            ]
+          },
+          "at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recorded_by": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decided_by": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "conditions": {
+            "type": "string"
+          },
+          "inherited_from": {
+            "type": "string",
+            "minLength": 1
+          },
+          "joint_with": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "artifact_revisions": {
+            "type": "object"
+          },
+          "choice": {
+            "type": "string"
+          },
+          "input_revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "invalidates": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "G1a",
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5",
+                "G6",
+                "G7",
+                "GX1",
+                "GX2",
+                "GX3"
+              ]
+            }
+          },
+          "dossier_hash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "task_revisions": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "inherited_decisions": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "dossier_artifact_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "enum": [
+                    "approved",
+                    "changes_requested",
+                    "rejected"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "quote",
+                "decided_by"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "not_applicable"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "reason"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "inherited"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "inherited_from"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "changed_at": {
+      "type": "string"
+    },
+    "changed_by": {
+      "type": "string"
+    },
+    "change_note": {
+      "type": "string"
+    },
+    "last_op": {
+      "type": "object"
+    },
+    "trackerStatus": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "const": "pm-idea"
+        }
+      },
+      "additionalProperties": false
+    },
+    "clickup_docs": {
+      "$ref": "#/$defs/externalDocuments"
+    },
+    "dev_knowledge_docs": {
+      "$ref": "#/$defs/externalDocuments"
+    }
+  },
+  "not": {
+    "required": [
+      "stage"
+    ]
+  },
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "work_type": {
+            "const": "product_feature"
+          }
+        },
+        "required": [
+          "work_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "route": {
+            "not": {
+              "const": "S"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "work_type": {
+            "const": "product_feature"
+          },
+          "status": {
+            "enum": [
+              "dev",
+              "validating"
+            ]
+          }
+        },
+        "required": [
+          "work_type",
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "value"
+        ],
+        "properties": {
+          "value": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "work_type": {
+            "const": "product_feature"
+          },
+          "status": {
+            "const": "knowledge"
+          },
+          "outcome": {
+            "enum": [
+              "validated",
+              "refuted",
+              "inconclusive",
+              "completed"
+            ]
+          }
+        },
+        "required": [
+          "work_type",
+          "status",
+          "outcome"
+        ]
+      },
+      "then": {
+        "required": [
+          "value"
+        ],
+        "properties": {
+          "value": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "knowledge"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "work_status": {
+            "const": "closed"
+          },
+          "outcome": {
+            "not": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "work_status": {
+            "not": {
+              "const": "closed"
+            }
+          },
+          "outcome": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "externalDocuments": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://[^\\s<>]+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

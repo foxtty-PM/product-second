@@ -1,0 +1,27 @@
+{
+  "version": "4.2.0",
+  "local_check": {
+    "status": "PASS",
+    "checks_passed": 414,
+    "counts": {
+      "roles": 9,
+      "nodes": 12,
+      "tracked_cards": 5,
+      "signals": 0,
+      "tracker_types": 4,
+      "skills": 12,
+      "procedures": 43,
+      "templates": 41,
+      "modules": 14
+    },
+    "live_nimbalyst_tested": false
+  },
+  "unit_and_integration_tests": {
+    "run": 88,
+    "passed": 88,
+    "failed": 0
+  },
+  "signals_initial_rows": 0,
+  "live_nimbalyst_verified": false,
+  "main_zip_consolidated": true
+}
